@@ -1,5 +1,6 @@
 package com.github.aws404.sjvt.mixin;
 
+import net.minecraft.world.gen.structure.Structure;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
@@ -164,7 +165,7 @@ public interface TradeOffersAccessor {
         int getPrice();
 
         @Accessor
-        TagKey<StructureType> getStructure();
+        TagKey<Structure> getStructure();
 
         @Accessor
         String getNameKey();
